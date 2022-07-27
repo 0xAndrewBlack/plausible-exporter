@@ -1,0 +1,48 @@
+{
+  "name": "plausible",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --loader ts-node/esm/transpile-only src/index.ts",
+    "dev": "nodemon --exec node --loader ts-node/esm/transpile-only src/index.ts",
+    "serve": "node build/main.js",
+    "test": "jest",
+    "west": "jest --watch",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0xAndrewBlack/plausible-exporter"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "chalk": "^5.0.1",
+    "cron": "^2.1.0",
+    "dotenv": "^16.0.1",
+    "influx": "^5.9.3",
+    "moment": "^2.29.4",
+    "node-cron": "^3.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.9",
+    "@babel/preset-env": "^7.18.9",
+    "@babel/preset-typescript": "^7.18.6",
+    "@types/axios": "^0.14.0",
+    "@types/chalk": "^2.2.0",
+    "@types/cron": "^2.0.0",
+    "@types/jest": "^28.1.6",
+    "@types/moment": "^2.13.0",
+    "@types/node-cron": "^3.0.2",
+    "babel-jest": "^28.1.3",
+    "husky": "^8.0.1",
+    "jest": "^28.1.3",
+    "nodemon": "^2.0.19",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.7.4"
+  }
+}
